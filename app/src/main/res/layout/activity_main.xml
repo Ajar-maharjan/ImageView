@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rgImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbimg1"
+            android:text="Pikachu 1"
+            style="@style/RadioStyle"/>
+
+        <RadioButton
+            android:id="@+id/rbimg2"
+            android:text="Pikachu 2"
+            style="@style/RadioStyle"/>
+
+        <RadioButton
+            android:id="@+id/rbimg3"
+            android:text="Sombra"
+            style="@style/RadioStyle"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgImage" />
+
+
+</LinearLayout>
